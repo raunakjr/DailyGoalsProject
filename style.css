@@ -1,0 +1,125 @@
+body {
+  background-color: #48a30012;
+  font-family: "Poppins", sans-serif;
+  /* if any how Poppins doesn't load it will take sans-serif */
+  margin: 0;
+}
+main {
+  margin: 16px;
+}
+.title {
+  color: #48a300;
+  text-align: center;
+  font-size: 64px;
+}
+span {
+  color: #61481c;
+}
+.subtitle {
+  font-size: 32px;
+}
+.ptag {
+  font-size: 14px;
+  color: #858585;
+}
+.progress-bar {
+  background-color: #48a3001a;
+  height: 30px;
+  border-radius: 15px;
+  text-align: right;
+}
+.progress-val {
+  background-color: green;
+  height: 0px;
+  width: 0%;
+  border-radius: 15px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.app-container {
+  background-color: #fbfbfb;
+  max-width: 620px;
+  margin-inline: auto;
+  border-radius: 15px;
+  padding: 32px 48px;
+  box-shadow: 5px 5px 10px gray;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sun-img {
+  vertical-align: middle;
+  margin-left: 15px;
+  animation: spin 3s linear infinite;
+}
+.alert-text {
+  color: red;
+  font-size: 14px;
+}
+.section-1 {
+  width: 100%;
+  height: 82px;
+
+  border: 1px solid #0000001a;
+  border-radius: 16px;
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 46px;
+}
+.quote {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+  margin-left: 10px;
+
+  background-color: white;
+  flex-shrink: 0;
+  flex-wrap: 0;
+}
+.madeby {
+  font-size: 10px;
+  font-weight: 500;
+
+  text-align: center;
+  text-underline-position: from-font;
+}
+.goal-input {
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 100%;
+  align-self: stretch;
+  padding-left: 15px;
+}
+.goal-input :: :placeholder-shown {
+  color: #d9d9d9;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  .app-container {
+    padding: 16px 32px;
+  }
+  .section-1 {
+    margin-bottom: 20px;
+  }
+}
